@@ -9,16 +9,15 @@ public class carafe {
 	
 	public carafe(int capacite) {
 		this.capacite_ = capacite;
-		this.contenu_ = 0;
+		Vider();
 	}
 	
 	public void Remplir() {
-		this.capacite_ = 7;
-		this.contenu_ = 7;
+		this.contenu_ = capacite_;
 	}
 	
 	public void Vider() {
-		
+		this.contenu_ = 0;
 	}
 	
 	public void Contenu() {
@@ -30,7 +29,7 @@ public class carafe {
 	}
 	
 	public void Transvaser() {
-		
+		this.contenu_ = contenu_ - capacite_;
 	}
 	
 }
