@@ -13,7 +13,8 @@ public class carafe {
 	}
 	
 	public void Remplir() {
-	
+		this.capacite_ = 7;
+		this.contenu_ = 7;
 	}
 	
 	public void Vider() {
