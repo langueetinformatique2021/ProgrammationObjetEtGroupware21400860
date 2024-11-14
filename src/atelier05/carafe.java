@@ -37,8 +37,12 @@ public class carafe {
 	/** accesseur en lecture
 	 * @return capacité de la carafe en L */
 	
-	public void Transvaser() {
-		this.contenu_ = contenu_ - capacite_;
+	public void Transvaser(carafe c) {
+		this.contenu_ = capacite_;
+		c.contenu_ = c.capacite_ - this.capacite_;
+		
 	}
-	
+
+	/** transvaser la carafe c dans la carafe this ou inversement
+	 * @param c carafe à transvaser */
 }
