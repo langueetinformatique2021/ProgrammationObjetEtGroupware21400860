@@ -4,8 +4,7 @@ public class carafe {
 	private int contenu_, capacite_;
 	
 	/** création d'une carafe vide
-	 * @param capacite - capacité en L de la carafe
-	 */
+	 * @param capacite - capacité en L de la carafe */
 	
 	public carafe(int capacite) {
 		this.capacite_ = capacite;
@@ -16,17 +15,27 @@ public class carafe {
 		this.contenu_ = capacite_;
 	}
 	
+	/** remplir une carafe pleine */
+	
 	public void Vider() {
 		this.contenu_ = 0;
 	}
 	
-	public void Contenu() {
-		
+	/** vider complètement une carafe */
+	
+	public int Contenu() {
+		return this.contenu_;
 	}
 	
-	public void Capacité() {
-		
+	/** accesseur en lecture
+	 * @return contenu de la carafe en L */
+	
+	public int Capacité() {
+		return this.capacite_;
 	}
+	
+	/** accesseur en lecture
+	 * @return capacité de la carafe en L */
 	
 	public void Transvaser() {
 		this.contenu_ = contenu_ - capacite_;
